@@ -899,7 +899,7 @@ local function HugPlayer(target)
         local targetHRP = targetChar.HumanoidRootPart
         pcall(function()
             sethiddenproperty(hrp, 'PhysicsRepRootPart', targetHRP)
-            hrp.CFrame = targetHRP.CFrame * CFrame.new(0, 1.3, 0) * CFrame.Angles(math.rad(0), 0, 0)
+            hrp.CFrame = targetHRP.CFrame * CFrame.new(0, 1.3, 0) * CFrame.Angles(math.rad(90), 0, 0)
             hrp.AssemblyLinearVelocity = Vector3.new(0, -9999, 0)
         end)
     end)
